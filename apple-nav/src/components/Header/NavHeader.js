@@ -1,11 +1,12 @@
 import React from 'react';
-import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const NavHeader = props => {
   return (
     <div>
-      <h1>Nav Header</h1>
-      <Nav />
+      <Link to={`${props.name}`}>
+        {props.name}
+      </Link>
     </div>
   )
 }
